@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Minesweeper</title>
+    <link href="./application.css" rel="stylesheet" type="text/css">
+    <script src="https://fb.me/react-0.13.3.js" charset="utf-8"></script>
+    <script src="https://fb.me/JSXTransformer-0.13.3.js" charset="utf-8"></script>
+    <script src="./minesweeper.js" type="text/jsx"></script>
+    <script src="./application.js" type="text/jsx"></script>
+  </head>
+  <body>
+    <h1>Minesweeper 💣</h1>
+    <div id="ms" class="group"></div>
+
+    <section id="modal" class="modal">
+
+    </section>
+    <p>Click to reveal, Alt-Click to flag.</p>
+
+    <script type="text/jsx">
+      React.render(
+      <Ms />,
+      document.getElementById('ms')
+      )
+    </script>
+  </body>
+</html>

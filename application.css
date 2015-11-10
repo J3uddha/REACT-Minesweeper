@@ -1,0 +1,124 @@
+body, figure, h1, img, p, li, ul, div {
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  font: inherit;
+  text-align: center;
+  text-decoration: inherit;
+  color: inherit;
+
+  background: transparent;
+
+  list-style: none;
+  font-family: "Futura" sans-serif;
+}
+
+#ms {
+
+  margin: 20px auto;
+  width: 312px;
+  height: 312px;
+  display: block;
+  padding-top: 10px;
+}
+
+.group:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.tile {
+  background: grey;
+  float: left;
+  display: block;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  border: 3px solid lightgray;
+  border-style: outset;
+}
+
+.bomb {
+  background: orange;
+  border-style: inset;
+}
+
+.flag {
+  color: red;
+}
+
+.explored {
+  background: #EEE;
+  border-style: inset;
+}
+
+.number {
+  background: #EEE;
+
+  color: blue;
+  border-style: inset;
+}
+
+
+h1 {
+    margin: 0 0 20px 0;
+    font-size: 60px;
+    font-weight: bold;
+  }
+p {
+  margin: 20px 0;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.modal {
+  display: none;
+}
+.modal.is-active {
+  display: block;
+}
+.modal-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.7);
+}
+.modal-content {
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 50px;
+  margin-left: -250px;
+  transform: translateY(-50%);
+  background: white;
+  border-radius: 5px;
+}
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  color: gray;
+}
+.modal-close:hover {
+  color: black;
+}
+.winner h2:before {
+  content: "You Win!";
+}
+.loser h2:before {
+  content: "You Lose!";
+}
